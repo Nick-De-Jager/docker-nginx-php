@@ -7,7 +7,7 @@ Get started with the project.
 
 For this project you need docker and docker-compose.
 ```bash
-  git clone git@github.com:Nick-De-Jager/docker-nginx-php.git
+  git clone https://github.com/Nick-De-Jager/docker-nginx-php.git
   cd docker-nginx-php
   docker-compose up -d
 ```
