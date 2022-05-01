@@ -1,8 +1,9 @@
 #!/bin/bash
 
 function setupDocker() {
-    sudo apt-get install docker`docker-compose -y
-    sudo groupadd docker
+    sudo apt-get update && sudo apt-get upgrade
+    curl -fsSL https://get.docker.com -o get-docker.sh
+    sudo sh get-docker.sh
     sudo usermod -aG docker $USER
     newgrp docker
     sudo systemctl enable docker.service
