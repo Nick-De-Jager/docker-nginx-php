@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function setupDocker() {
-    sudo apt-get install docker-ce docker-ce-cli containerd.io
+    sudo apt-get install docker
     sudo groupadd docker
     sudo usermod -aG docker $USER
     newgrp docker
