@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function setupDocker() {
-    sudo apt-get install docker
+    sudo apt-get install docker`docker-compose -y
     sudo groupadd docker
     sudo usermod -aG docker $USER
     newgrp docker
